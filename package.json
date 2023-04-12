@@ -1,7 +1,7 @@
 {
   "name": "react-native-camera-02",
   "description": "A Camera component for React Native. Also reads barcodes.",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "author": "Lochlan Wansbrough Modified by Mateus Chines",
   "collective": {
     "type": "opencollective",
@@ -70,7 +70,7 @@
   "pre-commit": "lint:staged",
   "repository": {
     "type": "git",
-    "url": "https://github.com/react-native-community/react-native-camera.git"
+    "url": "git+https://github.com/react-native-community/react-native-camera.git"
   },
   "scripts": {
     "commit": "git-cz",
@@ -108,5 +108,12 @@
     "commitizen": {
       "path": "@commitlint/prompt"
     }
+  },
+  "bugs": {
+    "url": "https://github.com/react-native-community/react-native-camera/issues"
+  },
+  "directories": {
+    "doc": "docs",
+    "example": "examples"
   }
 }
