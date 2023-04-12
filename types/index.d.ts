@@ -12,7 +12,8 @@
  * If you are seeing this from the future, please, send us your cutting-edge technology :) (if it exists)
  */
 import { Component, ReactNode } from 'react';
-import { NativeMethods, ViewProperties, findNodeHandle } from 'react-native';
+import { NativeMethods, findNodeHandle } from 'react-native';
+import { ViewPropTypes } from 'deprecated-react-native-prop-types';
 
 type Orientation = Readonly<{
   auto: any;
@@ -483,7 +484,7 @@ export interface HardwareCamera {
 
 export function hasTorch(): Promise<boolean>;
 
-export class RNCamera extends Component<RNCameraProps & ViewProperties> {
+export class RNCamera extends Component<RNCameraProps & ViewPropTypes> {
   static Constants: Constants;
 
   _cameraRef: null | NativeMethods;
